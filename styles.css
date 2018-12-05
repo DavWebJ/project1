@@ -1,0 +1,451 @@
+font-family: 'Courgette', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Bad Script', cursive;
+
+body{
+margin:0;
+padding: 0;
+overflow-x: hidden;
+
+}
+
+
+
+.header{
+
+    background: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.overlay img{
+
+    position: absolute;
+    height: 200px;
+    width:auto;
+    top: 230px;
+    transition: left 1s;
+
+}
+
+.header h1{
+
+    font-size: 7em;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top:-200px;
+    opacity: 0;
+    font-family: 'Bad Script';
+    font-weight: 600;
+    text-shadow: 5px 7px black;
+}
+
+#reservationConfirmer h1{
+
+	font-size: 2em !important;
+    color: white !important;
+    font-family: 'Bad Script';
+    font-weight: 400;
+    margin-top: 150px;
+    line-height: 1.5;
+}
+
+h2{
+
+    font-family: 'Caveat' !important;
+    font-size: 2.5em !important;
+    border-bottom: 1px solid #616161;
+
+}
+h3{
+
+	font-family: 'Caveat' !important;
+    font-size: 3em !important;
+    color: crimson !important;
+    position: relative;
+    
+}
+
+p{
+	
+	color: white;
+	font-size: 1.7em;
+	font-family: 'Courgette';
+	width: 700px;
+	margin: auto;
+	padding-top: 50px;
+
+
+
+}
+
+#Carte
+{
+   height: 800px;
+   overflow: hidden;
+   
+   
+  
+}
+
+
+
+
+#reservation{
+
+	position: relative;
+	height: 800px;
+	background:linear-gradient(to right, #485563, #29323c);
+	top: 500px;
+	width: 600px;
+	margin-left: 20px;
+}
+
+#reservationConfirmer{
+
+    position: relative;
+	height: 300px;
+	background:linear-gradient(to right, #485563, #29323c);
+	width: 1900px;
+	
+}
+
+
+.timerClock{
+
+	height: auto;
+	background: chartreuse;
+	color: crimson;
+	font-size: 1.5em;
+	padding: 30px;
+
+}
+
+
+
+aside{
+
+	height: 800px;
+	background-size: contain;
+}
+
+canvas{
+
+	position: relative;
+	left: 150px;
+	background: white;
+	border: 1px solid crimson;
+}
+
+#confirmer{
+
+
+	position: relative;
+	top:50px;
+	left: -100px;
+	
+}
+
+.container.scene {
+  position: relative;
+  width: 1000px;
+  height: 400px;
+  margin: 20px auto;
+  perspective: 1000px;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+  transform: translateZ(-288px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  transition: transform 1s, opacity 1s;
+  box-shadow: 1px 1px 8px 4px black;
+}
+
+
+#one{
+
+background: url("img/cyclic3.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+#two{
+background: url("img/cyclic2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+#three{
+background: url("img/carte.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+#four{
+background: url("img/infovelo.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center; 
+}
+
+#five{
+background: url("img/reservation.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;  
+}
+
+#six{
+background: url("img/reservation2.png");
+background-position: bottom;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.carousel-options{
+
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background:rgba(0,0,0,0.8);
+    border:1px solid grey;
+}
+.carousel-options p{
+
+color: white;
+
+}
+
+.carousel-control{
+
+display: flex;
+justify-content: center;
+
+}
+
+.fa-chevron-left{
+    
+    font-size: 40px !important;
+    color: white;
+    cursor: pointer;
+    
+    
+
+}
+.fa-chevron-right{
+
+    
+    font-size: 40px !important;
+    color: white;
+    cursor: pointer;
+   
+
+}
+
+.fa-pause{
+
+    font-size: 40px !important;
+    color: white;
+   cursor: pointer;
+   
+
+}
+.fa-play{
+
+    
+    font-size: 40px !important;
+    color: white;
+    cursor: pointer;
+    
+
+}
+
+.fa-long-arrow-up{
+
+	font-size: 40px !important;
+    color: red;
+    position: relative;
+
+}
+button{
+
+    background: rgba(0,0,0,0.5);
+    margin: 10px 20px !important;
+
+}
+
+figcaption p{
+
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Courgette';
+}
+
+
+
+tbody tr{
+
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+
+	margin: 0 30px;
+	position: relative;
+	left: 50px;
+}
+
+
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+
+	figcaption p {
+
+		width: 400px;
+	}
+
+	.overlay img{
+
+
+
+		left: 0;
+	}
+
+	.container.scene{
+
+
+		width: auto !important;
+	}
+
+	body{
+
+
+		overflow-x: hidden;
+	}
+
+	canvas{
+
+		left: 0;
+	}
+
+	#confirmer{
+
+
+		left: 0;
+	}
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+	figcaption p {
+
+		width: auto;
+	}
+	
+	.container.scene{
+
+
+		width: auto !important;
+	}
+	body{
+
+
+		overflow-x: hidden;
+	}
+	
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+	.overlay img{
+
+
+		
+		left: 250px;
+	}
+
+	.container.scene{
+
+
+		width: auto !important;
+	}
+	body{
+
+
+		overflow-x: hidden;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+	.overlay img{
+
+
+
+		left: 350px;
+	}
+
+
+	.container.scene{
+
+
+		width: auto !important;
+	}
+	body{
+
+
+		overflow-x: hidden;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+	.overlay img{
+
+
+
+		left: 700px;
+	}
+
+	#Carte{
+
+
+
+		left: 180px;
+	}
+	body{
+
+
+		overflow-x: hidden;
+	}
+} 
+
+
+
+

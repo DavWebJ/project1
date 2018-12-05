@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cy'Clic</title>
+        <meta name="description" content="louer votre velo facilement">
+        <meta name="viewport" content="width=device-width, initial-scale=1">*
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script|Caveat|Courgette|Satisfy" rel="stylesheet"> 
+        
+	</head>
+    <body>
+        <header class="header container-fluid">
+            <div class="overlay"><img src="img/vélo.png" alt="">
+                <h1 class="text-center">Cy'Clic</h1>
+            </div>
+        </header>
+            <h2 class="jumbotron text-center">réserver votre vélo n'a jamais été aussi facile !</h2>
+        <div class="container scene">
+        	<div class="row">
+            	<div class="carousel-container col-xs-12 col-sm-12 col-lg-12"> 
+                	<div class="carousel__cell" id="one"></div>
+                	<div class="carousel__cell" id="two"></div>
+                	<div class="carousel__cell" id="three"></div>
+                	<div class="carousel__cell" id="four"></div>
+                	<div class="carousel__cell" id="five"></div>
+                	<div class="carousel__cell" id="six"></div>
+            	</div>
+        	</div>
+        </div>
+        <div class="carousel-options">
+            <div class="carousel-control">
+                <button class="prev fa fa-chevron-left"></button>
+                <button class="play fa fa-play"></button>
+                <button class="pause fa fa-pause"></button>
+                <button class="next fa fa-chevron-right"></button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row" >
+                <div class="col-lg-8  col-sm-12 col-xs-12" id="Carte"></div>
+               	<aside class=" col-lg-4 col-sm-12 col-xs-12 info-map">
+                    <h2 class="jumbotron text-center"> réservez votre vélo ci-dessous:</h2>
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th colspan="12">Infos station: </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="active">
+                                <td class="nom"></td> 
+                                <td class="adresse"></td> 
+                                <td class="stats"></td> 
+                                <td class="dispo"></td>
+                                <td><a href="#Carte" id="reserver" class="btn btn-danger" role="button">réserver</a></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </aside>
+                <div id="reservation" class="container">
+                	<div class="row">
+                    	<h2 class="text-center jumbotron col-lg-12 col-xs-12">Formulaire de réservation</h2>
+                    <form action="post" class="col-lg-12 col-xs-12">
+                        <label for="nom">
+                            <input class="user" id="reservationNom" type="text"  placeholder="Votre nom" required="true">
+                        </label>
+                        <label for="prenom">
+                            <input class="user" id="reservationPrenom" type="text"  placeholder="Votre prénom" required="true">
+                        </label>
+                        <input class="user" id="velo" type="hidden">
+                        <input class="user" id="adr" type="hidden">
+                        <h3 class="text-center">signez ici</h3>
+                        <canvas id="Canvas"></canvas>
+                    	<canvas id='clone' style='display:none'></canvas>
+
+                    	<a href="#reservation" id="confirmer" class="btn btn-success" role="button">Confirmer la réservation</a>
+                    </form>
+                   
+                   
+                    <h4 class="text-center emptyForm">Veuillez remplir le formulaire SVP</h4>
+                    <h4 class="text-center emptycanvas">Veuillez signer SVP</h4>
+                    <h4 class="text-center alreadyUse">une réservation existe dèjà à ce nom</h4>
+                    </div>
+                </div>
+                <div id="reservationConfirmer" class="container-fluid">
+                	<div class="row">
+                		<p class="ID text-center col-lg-6 col-xs-12"></p>
+                		<h5 class="timerClock text-center col-lg-12 col-xs-12"></h5>
+                	</div>
+                </div>
+            </div>
+        </div>
+      	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      	<script src="js/StartAPP.js"></script>
+       	<script src="js/Carte.js"></script>
+        <script src="js/TheSlider.js"></script>
+        <script src="js/Canvas.js"></script>
+        <script src="js/Reservation.js"></script>
+
+        
+    </body>
+</html>
